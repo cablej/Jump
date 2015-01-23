@@ -16,6 +16,9 @@
 		04A63E051A6DDA8A00F55A89 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A63E041A6DDA8A00F55A89 /* Images.xcassets */; };
 		04A63E081A6DDA8A00F55A89 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A63E061A6DDA8A00F55A89 /* LaunchScreen.xib */; };
 		04A63E141A6DDA8A00F55A89 /* JumpTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A63E131A6DDA8A00F55A89 /* JumpTests.m */; };
+		04AC75931A6DE75100482E21 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC75921A6DE75100482E21 /* HomeViewController.m */; };
+		04AC75961A6DE76600482E21 /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC75951A6DE76600482E21 /* OptionsViewController.m */; };
+		04AC75991A6DE79700482E21 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC75981A6DE79700482E21 /* AboutViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,12 @@
 		04A63E0D1A6DDA8A00F55A89 /* JumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JumpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A63E121A6DDA8A00F55A89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04A63E131A6DDA8A00F55A89 /* JumpTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpTests.m; sourceTree = "<group>"; };
+		04AC75911A6DE75100482E21 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		04AC75921A6DE75100482E21 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		04AC75941A6DE76600482E21 /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
+		04AC75951A6DE76600482E21 /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		04AC75971A6DE79700482E21 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		04AC75981A6DE79700482E21 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +106,12 @@
 				04A63E041A6DDA8A00F55A89 /* Images.xcassets */,
 				04A63E061A6DDA8A00F55A89 /* LaunchScreen.xib */,
 				04A63DF21A6DDA8A00F55A89 /* Supporting Files */,
+				04AC75911A6DE75100482E21 /* HomeViewController.h */,
+				04AC75921A6DE75100482E21 /* HomeViewController.m */,
+				04AC75941A6DE76600482E21 /* OptionsViewController.h */,
+				04AC75951A6DE76600482E21 /* OptionsViewController.m */,
+				04AC75971A6DE79700482E21 /* AboutViewController.h */,
+				04AC75981A6DE79700482E21 /* AboutViewController.m */,
 			);
 			path = Jump;
 			sourceTree = "<group>";
@@ -231,7 +246,10 @@
 				04A63E001A6DDA8A00F55A89 /* GameViewController.m in Sources */,
 				04A63DF81A6DDA8A00F55A89 /* AppDelegate.m in Sources */,
 				04A63DFB1A6DDA8A00F55A89 /* GameScene.m in Sources */,
+				04AC75991A6DE79700482E21 /* AboutViewController.m in Sources */,
+				04AC75931A6DE75100482E21 /* HomeViewController.m in Sources */,
 				04A63DF51A6DDA8A00F55A89 /* main.m in Sources */,
+				04AC75961A6DE76600482E21 /* OptionsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +374,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jump/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -366,8 +386,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Jump/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -424,6 +446,7 @@
 				04A63E191A6DDA8A00F55A89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		04A63E1A1A6DDA8A00F55A89 /* Build configuration list for PBXNativeTarget "JumpTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +455,7 @@
 				04A63E1C1A6DDA8A00F55A89 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
